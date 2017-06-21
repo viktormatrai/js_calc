@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <div id="calculator">
+        <div class="top">
+            <input type="button" id="clear" value="C" onclick='reset()'>
+            <div class="screen"><input type="text" size="25" id="display"></div>
+        </div>
+
+        <div class="keys">
+            <input id="button" type="button" value="7" onclick='digit("7")'>
+            <input id="button" type="button" value="8" onclick='digit("8")'>
+            <input id="button" type="button" value="9" onclick='digit("9")'>
+            <input type="button" id="mathbutton" value="+" onclick='digit("+")'>
+            <input id="button" type="button" value="4" onclick='digit("4")'>
+            <input id="button" type="button" value="5" onclick='digit("5")'>
+            <input id="button" type="button" value="6" onclick='digit("6")'>
+            <input type="button" id="mathbutton" value="-" onclick='digit("-")'>
+            <input id="button" type="button" value="1" onclick='digit("1")'>
+            <input id="button" type="button" value="2" onclick='digit("2")'>
+            <input id="button" type="button" value="3" onclick='digit("3")'>
+            <input type="button" id="mathbutton" value="/" onclick='digit("/")'>
+            <input id="button" type="button" value="0" onclick='digit("0")'>
+            <input type="button" id="button" value="." onclick='digit(".")'>
+            <input type="button" id="equalbutton" value="=" onclick='equalTo()'>
+            <input type="button" id="mathbutton" value="*" onclick='digit("*")'>
+            <input type="button" id="mathbutton" value="%" onclick='percent()'>
+
+        </div>
+    </div>
+    <script src="js/calculator.js"></script>
+</body>
+</html>
